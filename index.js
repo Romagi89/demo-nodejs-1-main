@@ -11,7 +11,7 @@ const appVersion = "4.0";
 
 app.get('/', (req, res) => {
 
-  var msg = `<h1>Hello World!What's up ? This is just to test the pipeline</h1>
+  var msg = `<h1>Hello World!What's up ? This is just to deploy the nodejsapp</h1>
    <h2>
     Process ID: ${pid} <br> 
     Running on: ${hostname} <br>
