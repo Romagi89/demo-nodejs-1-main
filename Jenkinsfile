@@ -22,9 +22,9 @@ pipeline {
                   sh '''#!/bin/bash
                   echo "Creating .ssh"
                   mkdir -p /var/lib/jenkins/.ssh
-                  ssh-keyscan 3.128.153.191 >> /var/lib/jenkins/.ssh/known_hosts
-                  rsync -avz --exclude  '.git' --delete -e "ssh -i $sshkey" ./ ubuntu@3.128.153.191:/app/
-                  ssh -i $sshkey ubuntu@3.128.153.191 "sudo systemctl restart nodeapp"
+                  ssh-keyscan 18.116.59.129 >> /var/lib/jenkins/.ssh/known_hosts
+                  rsync -avz --exclude  '.git' --delete -e "ssh -i $sshkey" ./ ubuntu@18.116.59.129:/app/
+                  ssh -i $sshkey ubuntu@18.116.59.129 "sudo systemctl restart nodeapp"
                   '''
               }
           }
